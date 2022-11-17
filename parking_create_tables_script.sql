@@ -40,7 +40,7 @@ create table if not exists parking_place(
 
 create table if not exists orders(
  id bigserial primary key,
- date_from timestamp not null,
+ date_from timestamp,
  date_to timestamp,
  overtime boolean,
  pp_number int4 not null,
